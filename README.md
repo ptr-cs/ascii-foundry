@@ -1,3 +1,5 @@
+<img width="3840" height="2160" alt="Ascii-foundry-preview" src="https://github.com/user-attachments/assets/21a83952-331e-4fb6-b551-d2548cfacbdc" />
+
 # ASCII Foundry
 
 A local Vite + TypeScript app and Node.js package for converting images into colored ASCII art. The browser app exports PNGs, character/color grids, responsive HTML/CSS pages, and H.264 MOV frame sequences. The package creates HTML fragments for static sites, blogs, and other TypeScript build pipelines.
