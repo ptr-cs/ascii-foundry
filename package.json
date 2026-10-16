@@ -1,0 +1,46 @@
+{
+  "name": "ascii-foundry",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./package/index.js",
+  "types": "./package/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./package/index.d.ts",
+      "import": "./package/index.js"
+    },
+    "./core": {
+      "types": "./package/core.d.ts",
+      "import": "./package/core.js"
+    },
+    "./html": {
+      "types": "./package/html.d.ts",
+      "import": "./package/html.js"
+    }
+  },
+  "files": [
+    "package",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:app && npm run build:lib",
+    "build:app": "tsc && vite build",
+    "build:lib": "tsc -p tsconfig.lib.json",
+    "prepare": "npm run build:lib",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sister.software/asciify": "^4.3.0",
+    "@types/node": "^26.6.4",
+    "mp4box": "^2.4.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
+  }
+}
